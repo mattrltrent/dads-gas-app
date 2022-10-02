@@ -127,6 +127,7 @@ class _HomeState extends State<Home> {
                   ? Text(
                       "Something went wrong...",
                       style: kBody.copyWith(color: Colors.white),
+                      textAlign: TextAlign.center,
                     )
                   : TouchableOpacity(
                       onTap: () => changeCurrencyOrder(),
