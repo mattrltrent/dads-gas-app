@@ -91,7 +91,7 @@ class _HomeState extends State<Home> {
     if (currencyFirst == CurrencyFirst.cad) {
       return '${doubleToPrice(exchangeRate)} USD = \$1.00 CAD';
     } else {
-      return '\$1.00 USD = ${(1 / double.parse((exchangeRate).toStringAsFixed(2)).toDouble()).toStringAsFixed(2)} CAD';
+      return '\$1.00 USD = \$${(1 / double.parse((exchangeRate).toStringAsFixed(2)).toDouble()).toStringAsFixed(2)} CAD';
     }
   }
 
